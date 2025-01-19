@@ -69,7 +69,7 @@ router.post('/signup', async (req,res) => {
       username: username,
       nickname: nickname,
       authorities: [{
-         authorityName: encryptedPassword,
+         authorityName: 'ROLE_USER',
       }]
    }
 
