@@ -5,6 +5,7 @@
   "repository": "https://github.com/KonnoYuuki2/jest_Test.git",
   "author": "MinjaeK <93378322+KonnoYuuki2@users.noreply.github.com>",
   "license": "MIT",
+  "type": "module",
   "devDependencies": {
     "jsonwebtoken": "^9.0.2",
     "supertest": "^7.0.0"
