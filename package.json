@@ -1,0 +1,20 @@
+{
+  "name": "jest_Test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/KonnoYuuki2/jest_Test.git",
+  "author": "MinjaeK <93378322+KonnoYuuki2@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jsonwebtoken": "^9.0.2",
+    "supertest": "^7.0.0"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.26.0",
+    "@jest/globals": "^29.7.0",
+    "babel-jest": "^29.7.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
