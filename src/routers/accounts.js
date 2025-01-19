@@ -12,6 +12,47 @@ let users = [];
 
 const router = express.Router();
 
+/**
+ * @swagger
+ * tags:
+ *    name: Accounts
+ *    description: 회원가입, 로그인
+ */
+
+
+/**
+ * @swagger
+ * /app/signup:
+ *  post:
+ *     summary: "회원가입"
+ *     description: "회원가입을  한다."
+ *     tags: [Accounts]
+ *     responses:
+ *       "201":
+ *        description: "회원가입 성공"
+ *        content:
+ *          application/json:
+ *              schema:
+ *                type: object
+ *                properties:
+ *                     username:
+ *                         type: string
+ *                         description: "유저 아이디"
+ *                         example: "JIN HO"
+ *                     nickname:
+ *                         type: string
+ *                         description: "닉네임"
+ *                         example: "Mentos"
+ *                     authorities:
+ *                         type: array
+ *                         items:
+ *                           type: object
+ *                           properties:
+ *                             authorityName:
+ *                               type: string
+ *                               description: "암호화키"
+ *                               example: "ROLE_USER"
+ */
 router.post('/signup', async (req,res) => {
    const {username, password, nickname} = req.body;
 
@@ -35,6 +76,27 @@ router.post('/signup', async (req,res) => {
    return res.status(201).send(result);
 })
 
+
+/**
+ * @swagger
+ * /app/login:
+ *  post:
+ *     summary: "회원가입"
+ *     description: "회원가입을  한다."
+ *     tags: [Accounts]
+ *     responses:
+ *       "201":
+ *        description: "회원가입 성공"
+ *        content:
+ *          application/json:
+ *              schema:
+ *                type: object
+ *                properties:
+ *                   token:
+ *                      type: string
+ *                      description: "token"
+ *                      example: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1hbmFnZW1lIiwiaWF0IjoxNjI5MzQwNzYyLCJleHAiOjE2MjkzNDA4NjJ9.1"
+ */
 router.post('/login', async (req,res) => {
    const {username, password} = req.body;
 
