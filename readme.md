@@ -11,6 +11,7 @@
 
 ### 명령어
 jest 테스트 실행: npx jest
+서버 실행: npm start
 
 ### Swagger 주소
  :3000
