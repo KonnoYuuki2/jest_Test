@@ -3,6 +3,7 @@
 # 🎤 프로젝트 소개
 제작 기간: 2025.01.18 ~ 2025.01.19
 
+### 🎮 구현 기능
 - jest를 이용한 Access Token과 Refresh Token의 발급과 인증 테스트 코드
 - express와 jwt, bcrypt를 이용한 회원가입, 로그인(accounts) 구현
 - token 검증과 refreshToken 재발급을 위한 middleware(authorization), router(sayHello) 구현
