@@ -2,7 +2,7 @@ import express from "express";
 import http from "http";
 import dotenv from "dotenv";
 import account from "./routers/accounts.js";
-import sayHello from "./routers/sayHello.js";
+import auth from "./routers/auth.js";
 import swaggerConfig from "./swagger/swagger.js";
 
 dotenv.config();
@@ -14,7 +14,7 @@ const server = http.createServer();
 
 app.use(express.json());
 
-app.use('/app', [account,sayHello]);
+app.use('/app', [account,auth]);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs)); // 미들 웨어 추가
 
 app.listen(process.env.port, process.env.host, () => {
