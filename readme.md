@@ -33,7 +33,7 @@ jest 설정을 추가하여 babel에서 import문이 제대로 변경되도록 �
  비교해보니 result.exp의 시간은 second 단위의 Unix 시간, Date.now()는 milliSecond 단위 Unix 시간임을 확인
  exp 시간에 맞추어 Date.now()의 시간을 수정함으로써 토큰 만료 로직을 수정함
 
- -3. jest 테스트 중 expired 문제
+ - 3. jest 테스트 중 expired 문제
  jest 테스트 중, jest에서 만든 jwt와 이를 받아 처리하는 authorization 미들웨어의 jwt의 시간이 다른 문제가 발생함
  이유를 확인해본 결과, 하나의 describe에 auth와 accounts 테스트를 몰아서 한 것이 문제였음.
  각각 별도의 describe으로 분리하여 테스트를 진행하여 오류를 해결하였음.
