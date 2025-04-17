@@ -14,7 +14,7 @@ jest 테스트 실행: npx jest
 서버 실행: npm start
 
 ### Swagger 주소
- :3000
+ 0.0.0.0:3000
 
 ### 트러블 슈팅
 - 1. jest babel 문제
