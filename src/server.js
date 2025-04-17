@@ -10,7 +10,7 @@ const {swaggerUi, specs} = swaggerConfig;
 
 const app = express();
 
-const server = http.createServer();
+const server = http.createServer(app);
 
 app.use(express.json());
 

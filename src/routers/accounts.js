@@ -70,7 +70,7 @@ const router = express.Router();
 
 router.post('/signup', async (req,res) => {
    const {username, password, nickname} = req.body;
-   //console.log("req.body:", req.body);
+   console.log("req.body:", req.body);
 
    if(users.find((user) => user.username === username)) {
       return res.status(400).send({

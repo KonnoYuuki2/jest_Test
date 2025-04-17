@@ -14,7 +14,8 @@ const options = {
     },
     servers: [
       {
-        url: dotenv.host + dotenv.port,
+        // ! 직접 홈페이지 주소를 매핑할 필요성 http://~:3000
+        url: process.env.host + process.env.port,
       },
     ],
     components: {
