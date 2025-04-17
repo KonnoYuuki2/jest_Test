@@ -39,5 +39,9 @@ jest 설정을 추가하여 babel에서 import문이 제대로 변경되도록 �
  이유를 확인해본 결과, 하나의 describe에 auth와 accounts 테스트를 몰아서 한 것이 문제였음.
  각각 별도의 describe으로 분리하여 테스트를 진행하여 오류를 해결하였음.
 
+- 4. swagger UI 라우팅 문제
+swagger UI 테스트 중 Execute 했을 때 swagger UI로 직접 라우팅되어 swagger UI의 URL을 띄우는 문제가 발생함
+swagger UI의 주소와 서버의 주소가 일치하였을 떄 이런 문제가 발생할 수 있음을 확인
+swagger UI의 주소를 서버의 주소와 달리 직접 입력하여 문제 현상을 해결함
 
 
